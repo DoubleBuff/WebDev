@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset.css">
+  <style>
+    .header {
+      height: 80px;
+      background-color: #07cbc9;
+      box-sizing: border-box;
+      padding: 0 80px 0 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu {
+      color: #FFFFFF;
+    }
+
+    .menu span {
+      cursor: pointer;
+      margin-left: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .banner {
+      width: 100%;
+      height: 540px;
+      background-image: url("./作业素材/images/banner3.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form_default {
+      width: 510px;
+      height: 44px;
+      background-color: transparent;
+      border: 2px solid #EEEEEE;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding-left: 10px;
+    }
+
+    .form_height {
+      height: 120px;
+    }
+
+    .form_button {
+      width: 140px;
+      height: 50px;
+      border: 2px solid #EEEEEE;
+      background-color: transparent;
+    }
+
+    .form_button_box {
+      text-align: center;
+    }
+
+    .title_1 {
+      width: 40%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .title_1 h1 {
+      margin-top: 30px;
+    }
+
+    .line {
+      color: #07cbc9;
+      margin-bottom: 10px;
+    }
+
+    .title_1 .text {
+      color: #999999;
+      font-size: 14px;
+    }
+
+    .position_box {
+      width: 650px;
+      height: 435px;
+      background-image: url("./作业素材/images/bb3.jpg");
+      margin: 20px auto auto auto;
+      position: relative;
+    }
+
+    .right {
+      position: absolute;
+      right: -290px;
+    }
+
+    .right_box {
+      width: 240px;
+      height: 146px;
+      border: 1px solid #07cbc9;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left {
+      width: 380px;
+      position: absolute;
+      left: -240px;
+    }
+
+    .info_box {
+      width: 100%;
+      height: 240px;
+      box-sizing: border-box;
+      padding: 20px 10px;
+      border: 1px solid #CCCCCC;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .info_box p {
+      margin-bottom: 6px;
+    }
+
+    .info_box button {
+      margin-top: 10px;
+      width: 102px;
+      height: 45px;
+      background-color: #222222;
+      color: #FFFFFF;
+      border: none;
+    }
+
+    .content button {
+      margin-top: 10px;
+      width: 102px;
+      height: 45px;
+      background-color: #222222;
+      color: #FFFFFF;
+      border: none;
+    }
+
+    .empty {
+      width: 100%;
+      height: 80px;
+    }
+
+    .empty2 {
+      width: 100%;
+      height: 40px;
+    }
+
+    .float_box {
+      /*height: 792px;*/
+      overflow: hidden;
+    }
+
+    .default_Box {
+      width: 25%;
+      height: 396px;
+      background-color: #07cbc9;
+      float: left;
+      position: relative;
+    }
+
+    .left_border {
+      position: absolute;
+      border: 10px solid transparent;
+      border-right: 20px solid #07cbc9;
+      top: 50%;
+      left: -30px;
+      margin-top: -10px;
+    }
+
+    .right_border {
+      position: absolute;
+      border: 10px solid transparent;
+      border-left: 20px solid #07cbc9;
+      top: 50%;
+      right: -30px;
+      margin-top: -10px;
+      z-index: 100;
+    }
+
+    .content {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 20px 35px;
+      color: #FFFFFF;
+    }
+
+    .p1 {
+      margin-bottom: 5px;
+    }
+
+    .p2 {
+      font-size: 14px;
+      color: #CCCCCC;
+      margin-bottom: 5px;
+    }
+
+    .p2-1 {
+      margin-top: 20px;
+    }
+
+    .btn_box {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .img_box {
+      width: 1120px;
+      margin: 30px auto 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .flex_between_box {
+      width: 360px;
+      height: 304px;
+      background-color: #409eff;
+      margin-bottom: 20px;
+    }
+
+    .black_box {
+      height: 64px;
+      background-color: #000000;
+      color: #FFFFFF;
+      box-sizing: border-box;
+      padding-left: 10px;
+      line-height: 64px;
+    }
+
+    .img {
+      /*解决图片下方有间隙的一个bug*/
+      vertical-align: middle;
+    }
+
+    .footer {
+      width: 100%;
+      height: 80px;
+      background-color: #07cbc9;
+      line-height: 80px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <!--第一行模块-->
+  <div class="header">
+    <div>
+      <img src="./作业素材/images/logo.png" alt="">
+    </div>
+    <div class="menu">
+      <span>HOME</span>
+      <span>ABOUT</span>
+      <span>GALLERY</span>
+      <span>FACULTY</span>
+      <span>EVENTS</span>
+      <span>CONTACT</span>
+    </div>
+  </div>
+  <!--第二行模块-->
+  <div class="banner">
+    <input class="form_default" type="text" placeholder="your Name">
+    <input class="form_default" type="text" placeholder="your Phone">
+    <input class="form_default" type="text" placeholder="your Email">
+    <textarea class="form_default form_height" name="" id="" cols="30" rows="10" placeholder="Write Your Comment Here"></textarea>
+<!--    <input type="button" value="SEND MESSAGE">-->
+<!--    <div class="form_button_box">-->
+      <button class="form_button">SEND MESSAGE</button>
+<!--    </div>-->
+  </div>
+  <!--第三行模块-->
+  <div class="title_1">
+    <h1>ABOUT</h1>
+    <div class="line">____</div>
+    <div class="text">
+      sadasdasdasdasdasdasdsadsasadasdasadsasadasdasdasdasdasds
+      <br>
+      sdasdasdasdasdsadsasadasdassdasdsadsasadasdasddasdasdadsa
+      <br>
+      asdasdasdasdaasdasdasdasdsadsasadasdasdas
+    </div>
+  </div>
+  <!--第四行模块-->
+  <div class="position_box">
+    <div class="left">
+      <div>
+        <h1>&nbsp;A WORD</h1>
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="info_box">
+        <p>我是第一行文字</p>
+        <p>我是第一行文字</p>
+        <p>我是第一行文字</p>
+        <p>我是第一行文字</p>
+        <p>我是第一行文字</p>
+        <button>EXPLORE</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right_box">
+        <h2>70000</h2>
+        <div class="line">____</div>
+        <h3>Students</h3>
+      </div>
+      <div class="right_box">
+        <h2>600</h2>
+        <div class="line">____</div>
+        <h3>Hello</h3>
+      </div>
+    </div>
+  </div>
+  <!--空模块-->
+  <div class="empty"></div>
+  <!--第五行模块-->
+  <div class="float_box">
+    <img class="default_Box" src="./作业素材/images/b1.jpg" alt="">
+    <div class="default_Box">
+      <div class="left_border"></div>
+      <div class="content">
+        <h1 style="margin: 5px 0 20px 0;">Library</h1>
+        <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="p2 p2-1">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <div class="btn_box">
+          <button>EXPLORE</button>
+        </div>
+      </div>
+    </div>
+    <img class="default_Box" src="./作业素材/images/b2.jpg" alt="">
+    <div class="default_Box">
+      <div class="left_border"></div>
+      <div class="content">
+        <h1 style="margin: 5px 0 20px 0;">Library</h1>
+        <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="p2 p2-1">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <div class="btn_box">
+          <button>EXPLORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="default_Box">
+      <div class="right_border"></div>
+      <div class="content">
+        <h1 style="margin: 5px 0 20px 0;">Library</h1>
+        <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="p2 p2-1">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <div class="btn_box">
+          <button>EXPLORE</button>
+        </div>
+      </div>
+    </div>
+    <img class="default_Box" src="./作业素材/images/b3.jpg" alt="">
+    <div class="default_Box">
+      <div class="right_border"></div>
+      <div class="content">
+        <h1 style="margin: 5px 0 20px 0;">Library</h1>
+        <p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p class="p2 p2-1">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <p class="p2">sadsadasdaasddsasadsdaasdsadasdasdsa</p>
+        <div class="btn_box">
+          <button>EXPLORE</button>
+        </div>
+      </div>
+    </div>
+    <img class="default_Box" src="./作业素材/images/b4.jpg" alt="">
+  </div>
+  <!--第六行模块-->
+  <div class="title_1">
+    <h1>GALLERY</h1>
+    <div class="line">____</div>
+    <div class="text">
+      sadasdasdasdasdasdasdsadsasadasdasadsasadasdasdasdasdasds
+      <br>
+      sdasdasdasdasdsadsasadasdassdasdsadsasadasdasddasdasdadsa
+      <br>
+      asdasdasdasdaasdasdasdasdsadsasadasdasdas
+    </div>
+  </div>
+  <!--第七行模块-->
+  <div class="img_box">
+    <div class="flex_between_box">
+      <img class="img" src="./作业素材/images/03-01.jpg" alt="">
+      <div class="black_box">
+        SCIENCE LAB
+      </div>
+    </div>
+    <div class="flex_between_box">
+      <img class="img" src="./作业素材/images/03-02.jpg" alt="">
+      <div class="black_box">
+        SCIENCE LAB
+      </div>
+    </div>
+    <div class="flex_between_box">
+      <img class="img" src="./作业素材/images/03-03.jpg" alt="">
+      <div class="black_box">
+        SCIENCE LAB
+      </div>
+    </div>
+    <div class="flex_between_box">
+      <img class="img" src="./作业素材/images/03-04.jpg" alt="">
+      <div class="black_box">
+        SCIENCE LAB
+      </div>
+    </div>
+    <div class="flex_between_box">
+      <img class="img" src="./作业素材/images/03-05.jpg" alt="">
+      <div class="black_box">
+        SCIENCE LAB
+      </div>
+    </div>
+    <div class="flex_between_box">
+      <img class="img" src="./作业素材/images/03-06.jpg" alt="">
+      <div class="black_box">
+        SCIENCE LAB
+      </div>
+    </div>
+  </div>
+  <!--空模块-->
+  <div class="empty2"></div>
+  <!--第八行模块-->
+  <div class="footer">
+    &copy; 2016 imooc.com 京ICP备13046642号
+  </div>
+</body>
+</html>
